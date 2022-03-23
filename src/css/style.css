@@ -1,6 +1,7 @@
 * {
   font-family: "Inter", sans-serif;
   list-style: none;
+  box-sizing: border-box;
 }
 
 .header {
@@ -8,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f5f5f5;
-
   width: 100vw;
   height: 70px;
 }
@@ -26,15 +26,22 @@ h1 {
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
-  width: 40%;
+  justify-content: center;
+  width: 55%;
 }
 
 .navbar li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  color: #828282;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navbar li:hover {
   color: #333333;
+  font-weight: 600;
 }
 
 .main-container {
@@ -44,7 +51,7 @@ h1 {
 }
 
 .products-container {
-  width: 70%;
+  width: 60%;
 }
 
 .products-container ul {
@@ -54,7 +61,112 @@ h1 {
 
 .products-container ul li {
   width: 296px;
-  height: 511px;
   margin: 20px;
   background-color: #f5f5f5;
+}
+
+figure {
+  width: 296px;
+  height: 154px;
+  padding: 5px 42px;
+}
+
+.content {
+  height: 215px;
+  width: 296px;
+  left: 2px;
+  top: 150px;
+  border-radius: 0px;
+  padding: 20px, 15px, 20px, 15px;
+}
+
+.tag {
+  width: 72px;
+  height: 26px;
+  margin: 20px 15px;
+  padding: 5px;
+  gap: 10px;
+  background-color: #2e245e;
+}
+
+.tag span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+h3 {
+  height: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  margin-left: 15px;
+}
+
+.product-description {
+  width: 269px;
+  height: 33px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin: 15px auto;
+}
+
+.price {
+  width: 269px;
+  height: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.add-to-cart {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  width: 147px;
+  height: 16px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.container-search {
+  width: 25%;
+}
+
+.input-search {
+  width: 246px;
+  height: 50px;
+  margin-top: 23px;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.btn-search,
+.cart-title {
+  width: 96px;
+  height: 50px;
+  margin-top: 23px;
+  border: none;
+  background-color: #6b54de;
+  color: #ffffff;
+}
+
+.cart {
+  background-color: #f5f5f5;
+  width: 347px;
+  height: 344px;
+}
+.cart-title {
+  width: 347px;
+  text-align: center;
+  justify-content: center;
+  line-height: 45px;
+  margin: 15px auto;
 }
